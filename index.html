@@ -18,6 +18,8 @@ body {
   transition: background 0.3s, color 0.3s;
   flex-direction:column;
   overflow-x:auto;
+  width:250%;
+  font-family:Arial ,sans-serif;
 }
 
 .sidebar {
@@ -26,7 +28,7 @@ body {
   color: #fff;
   display: flex-shrink:0;
   flex-direction: column;
-  padding: 25px 20px;
+  padding:20px;
   transition: background 0.3s;
 }
 .sidebar .logo {
@@ -39,11 +41,11 @@ body {
 }
 .sidebar ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 .sidebar ul li {
-  padding: 12px 15px;
-  margin-bottom: 12px;
+  padding: 10px;
+  margin-bottom: 5px;
   cursor: pointer;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -58,9 +60,11 @@ body {
 
 .main-content {
   flex: 1;
-  padding: 30px 35px;
+  padding: 20px;
   background: #f4f6fb;
   transition: background 0.3s;
+box-sizing:border-box;
+
 }
 header {
   display: flex;
@@ -234,7 +238,9 @@ body.dark-mode button {
   .main-content {
     flex:1;
     overflow-x:auto;
-    padding: 15px;
+    padding: 20px;
+    width:100%;
+    box-sizing:border-box;
   }
   .cards {
     flex-direction: column;
