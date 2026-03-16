@@ -18,12 +18,14 @@ body {
   transition: background 0.3s, color 0.3s;
   flex-direction:column;
   overflow-x:auto;
-  width:250%;
+  width:220%;
   font-family:Arial ,sans-serif;
 }
-
+  h1,h2,h3{
+    font-size:18px;
+  }           
 .sidebar {
-  width: 250px;
+  width: 220px;
   background: linear-gradient(180deg, #1e3a8a, #2563eb);
   color: #fff;
   display: flex-shrink:0;
@@ -187,6 +189,7 @@ table tr:hover td {
 .page {
   display: none;
   animation: fadeIn 0.4s ease-in;
+  height:100%;
 }
 .page.active {
   display: block;
@@ -241,6 +244,9 @@ body.dark-mode button {
     padding: 20px;
     width:100%;
     box-sizing:border-box;
+    height:100vh;
+    font-size:18px
+    line-height:1.6
   }
   .cards {
     flex-direction: column;
