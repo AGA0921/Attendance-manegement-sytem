@@ -6,7 +6,6 @@
 <title>Attendance Management System</title>
 <style>
   
-/* ===== Reset & Base ===== */
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +18,6 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-/* ===== Sidebar ===== */
 .sidebar {
   width: 250px;
   background: linear-gradient(180deg, #1e3a8a, #2563eb);
@@ -56,7 +54,6 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* ===== Main Content ===== */
 .main-content {
   flex: 1;
   padding: 30px 35px;
@@ -90,7 +87,6 @@ header button:hover {
   transform: translateY(-2px);
 }
 
-/* ===== Cards ===== */
 .cards {
   display: flex;
   gap: 25px;
@@ -122,7 +118,6 @@ header button:hover {
   color: #0f172a;
 }
 
-/* ===== Tables ===== */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -147,7 +142,6 @@ table tr:hover td {
   background: rgba(37,99,235,0.05);
 }
 
-/* ===== Forms ===== */
 .form-group {
   margin: 15px 0;
   display: flex;
@@ -184,7 +178,6 @@ table tr:hover td {
   transform: translateY(-2px);
 }
 
-/* ===== Pages ===== */
 .page {
   display: none;
   animation: fadeIn 0.4s ease-in;
@@ -197,7 +190,6 @@ table tr:hover td {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== Dark Mode ===== */
 body.dark-mode {
   background: #0f172a;
   color: #e2e8f0;
@@ -207,7 +199,6 @@ body.dark-mode .main-content {
 }
 body.dark-mode .card {
 
-Lencho Ahmed, [3/15/2026 3:57 AM]
 background: #334155;
   color: white;
 }
@@ -225,7 +216,7 @@ body.dark-mode button {
   background: #2563eb;
 }
 
-/* ===== Responsive ===== */
+
 @media(max-width:768px) {
   body {
     flex-direction: column;
@@ -271,7 +262,7 @@ body.dark-mode button {
     <button id="darkModeBtn">Dark Mode</button>
   </header>
 
-  <!-- Dashboard -->
+  
   <section id="dashboard" class="page active ">
     <div class="cards">
       <div class="card">
