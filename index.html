@@ -28,6 +28,10 @@ font-family:Arial;
 display:flex;
 background:var(--bg);
 color:var(--text);
+flex-direction:row;
+min-height:100vh;
+
+
 }
 
 
@@ -63,13 +67,19 @@ background:#2563eb;
 
 .main{
 flex:1;
-padding:30px;
+padding:20px;
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  box-sizing:border-box;
 }
 
 .header{
 display:flex;
 justify-content:space-between;
 align-items:center;
+  margin-buttom:25px;
+  flex-wrap:wrap;
 }
 
 
@@ -116,6 +126,8 @@ width:100%;
 border-collapse:collapse;
 margin-top:20px;
 background:var(--card);
+  overflow-x:auto;
+  display:block;
 }
 
 th,td{
@@ -147,8 +159,17 @@ flex-direction:column;
 .sidebar{
 position:fixed;
 left:-240px;
-top:0;
+display:flex;
 height:100%;
+gap:10px;
+width:100%;
+height:auto;
+overflow-x:auto;
+padding:10px;
+
+
+
+  
 }
 
 .sidebar.show{
